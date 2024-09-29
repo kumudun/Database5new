@@ -5,7 +5,7 @@ select max(elevation_ft) from airport;
 ![screenshot](Screenshot-Q-1.png)
 
 ### Question 2
-select continent, count(*) from country group by continent;
+select continent,count(*) from country group by continent;
 ![screenshot](Screenshot-Q-2.png)
 
 ### Question 3
