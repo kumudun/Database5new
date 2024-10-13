@@ -17,11 +17,8 @@ select screen_name from game where co2_consumed in(select min(co2_consumed) from
 ![screenshot](Screenshot4.png)
 
 ### Question 5
-select country.name, count() 
-from airport, country 
-where airport.iso_country = country.iso_country group by country.iso_country order by count() desc limit 50;
 
-![screenshot](Screenshot5.png)
+
 
 ### Question 6
 select country.name
@@ -44,5 +41,3 @@ select count(*) from game, goal_reached where id = game_id and screen_name = "Ve
 ![screenshot](Screenshot9.png)
 
 ### Question 10
-select name from airport where latitude_deg in( select min(latitude_deg) from airport );
-![screenshot](Screenshot10.png)
